@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import PropTypes from 'prop-types';
-import ceoimg from './../../assets/ceo.jpeg'
+
 
 const About = () => {
   return (
@@ -25,14 +25,14 @@ const About = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                      src="https://i.ibb.co/YbDWssK/josue-isai-ramos-figueroa-qv-BYn-Mu-NJ9-A-unsplash.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                      src="https://i.ibb.co/sWWMqJx/john-kakuk-t8l4-MZu-Xon-Y-unsplash.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -41,7 +41,7 @@ const About = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      src="https://i.ibb.co/qjhz4RY/mufid-majnun-6203-Ynp5-Zq-E-unsplash.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -645,7 +645,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container mx-auto py-10">
+        <div className="container mx-auto pt-28">
         <div className="-mx-4 flex flex-wrap" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
