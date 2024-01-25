@@ -15,7 +15,7 @@ const Footer = () => {
 
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/"> Home </a>
+        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Home"> Home </a>
       </li>
 
       <li>
