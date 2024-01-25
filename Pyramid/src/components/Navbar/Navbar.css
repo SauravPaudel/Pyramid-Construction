@@ -1,5 +1,5 @@
 .active{
-  background-color: #294B29;
+  background-color: #0A1D56;
 }
 nav ul li a {
   display: block;
@@ -10,8 +10,10 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover{
-  background-color: #424769;
+  background-color: #86937b;
+  color: black;
 }
+
 
 ul{
   display: flex;
@@ -63,6 +65,7 @@ nav ul li a{
   margin: 0.2rem 0.5rem;
 }
 nav ul li a:not(.active):hover{
-  background-color: #424769;
+  background-color: #86937b;
+  color: white;
 }
 }

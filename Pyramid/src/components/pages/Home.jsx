@@ -5,12 +5,13 @@ import Services from './Services'
 import Project from './Project'
 import Teams from './Teams'
 
+
 const Home = () => {
   return (
     <>
     <section className='hcontainer'>
       <div className='position: absolute top-[150px] left-[250px] '>
-      <span className='flex font-bold text-6xl py-3 tracking-wider subpixel-antialiased text-blue-400'>Quality & </span>
+      <span className='flex font-bold text-6xl py-3 tracking-wider subpixel-antialiased text-blue-400 sm:relative right-20'>Quality & </span>
       <span className='font-bold text-6xl tracking-wider subpixel-antialiased text-black'>Integrity</span>
       <p className='w-[500px] text-justify font-medium py-4 mt-4 text-black'>Welcome to Pyramid Construction, where craftsmanship meets innovation. As a leading force in the construction industry, we pride ourselves on delivering excellence in every project we undertake. With a dedicated team of skilled professionals, we bring your visions to life, one brick at a time. At Pyramid Construction, we stand tall on the pillars of quality, integrity, and customer satisfaction. Let us build your dreams into reality.</p>
       <button className='expbtn'> <span>Explore</span></button>

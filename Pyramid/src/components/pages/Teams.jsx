@@ -31,7 +31,7 @@ const Teams = () => {
         <TeamCard
           name="Er. Sujan Pradhan"
           profession="Managing Director"
-          imageSrc="https://i.ibb.co/SQSx8sV/Whats-App-Image-2024-01-08-at-12-35-38-3.jpg"
+          imageSrc="https://i.ibb.co/mHvBK78/Whats-App-Image-2024-01-08-at-12-35-38-3.jpg"
           number="9851110057"
         />
         <TeamCard

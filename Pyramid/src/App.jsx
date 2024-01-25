@@ -12,7 +12,7 @@ return(
     <Navbar/>
     <div>
     <Routes>        
-      <Route path="/"  element={<Home/>} />
+      <Route path="/Home"  element={<Home/>} />
       <Route path="/Project"  element={<Project />}/>
       <Route path="/Services"  element={<Services/>}/>
       <Route path="/Teams" element ={<Teams/>}/>
