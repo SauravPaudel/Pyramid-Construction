@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   useEffect(() => {
@@ -134,8 +135,8 @@ const Services = () => {
           }
         />
         <ServiceCard
-          title="Plumbing Services"
-          details="Installation | Repair | Plumbing system maintenance"
+          title="Hydropower Construction"
+          details="Installation | Repair | Construction and Maintain"
           icon={
             <svg 
             fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  version="1.1"><path d="M16,9V11H8V9H10V8H4V10H2V2H4V4H12A2,2 0 0,1 14,6V9H16M10,15V18A2,2 0 0,0 12,20H20V22H22V14H20V16H14V15H16V13H8V15H10Z" />
@@ -183,6 +184,7 @@ const Services = () => {
 const ServiceCard = ({ icon, title, details }) => {
   return (
     <>
+    
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mb-9 rounded-[20px] bg-green-100 p-10 shadow-md hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
           <div className="mb-8 flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-[#ffff]">
@@ -194,6 +196,7 @@ const ServiceCard = ({ icon, title, details }) => {
           <p className="text-body-color dark:text-dark-6">{details}</p>
         </div>
       </div>
+     
     </>
   );
 };

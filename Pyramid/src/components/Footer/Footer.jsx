@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './/../../assets/pyramid.png'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div>
@@ -15,27 +16,28 @@ const Footer = () => {
 
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Home"> Home </a>
+      <Link className='text-gray-700 transition hover:text-gray-700/75' to='/Home'> Home </Link>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Project"> Projects </a>
+        <Link className='text-gray-700 transition hover:text-gray-700/75' to='/Project'> Project </Link>
+        {/* <a className="text-gray-700 transition hover:text-gray-700/75" href="/Project"> Projects </a> */}
+      </li>
+      
+      <li>
+      <Link className='text-gray-700 transition hover:text-gray-700/75' to='/Services'>Services </Link>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Services">Services </a>
+      <Link className='text-gray-700 transition hover:text-gray-700/75' to='/Teams'>Teams </Link>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/Teams">Teams </a>
+      <Link className='text-gray-700 transition hover:text-gray-700/75' to='/About'>About</Link>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/About">About </a>
-      </li>
-
-      <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/"> Blog </a>
+      <Link className='text-gray-700 transition hover:text-gray-700/75' to='#'>Blogs </Link>
       </li>
     </ul>
 

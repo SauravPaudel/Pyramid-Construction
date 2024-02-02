@@ -13,7 +13,7 @@ const About = () => {
              About Us
             </span>
             <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-green sm:text-4xl md:text-[40px]">
-              Complete and Ongoing 
+             Know more about us
             </h2>
             <p className="text-base text-body-color dark:text-dark-6">
             Explore the impressive portfolio of Pyramid Construction, showcasing their commitment to excellence in the construction industry.</p>

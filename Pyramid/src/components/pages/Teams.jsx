@@ -1,266 +1,105 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Teams from "./section"
 
-const Teams = () => {
+const TeamMember = ({ image, name, profession, phoneNumber }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-    <div className="container mx-auto">
-      <div className="-mx-20 flex flex-wrap" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
-        <div className="w-full px-4">
-          <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-            <span className="mb-2 block text-lg font-semibold text-blue-400">
-              Our Team
-            </span>
-            <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl md:text-[40px]">
-              Our Awesome Team
-            </h2>
-            <p className="text-base text-body-color dark:text-dark-6">
-              There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration in some form.
-            </p>
-          </div>
+   
+    <div 
+      className="relative overflow-hidden group w-[400px] px-3 flex items-center justify-center py-5"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      
+    >
+    
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-auto rounded-xl transition-transform transform group-hover:scale-105"
+      />
+      <div
+        className={`absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white rounded-xl ${
+          isHovered ? 'opacity-100' : 'opacity-0'
+        } transition-opacity`}
+      >
+        <div className="text-center">
+          <h2 className="text-lg font-semibold">{name}</h2>
+          {isHovered && (
+            <div>
+              <p className="text-sm">{profession}</p>
+              <p className="text-sm">{phoneNumber}</p>
+            </div>
+          )}
         </div>
-      </div>
-
-      <div className="-mx-4 flex flex-wrap justify-center pt-16" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
-        <TeamCard
-          name="Er. Navaraj Vaidya"
-          profession="Chairman"
-          imageSrc="https://i.ibb.co/gyTDJNF/ceo.jpg"
-          number="9851045200"
-        />
-        <TeamCard
-          name="Er. Sujan Pradhan"
-          profession="Managing Director"
-          imageSrc="https://i.ibb.co/mHvBK78/Whats-App-Image-2024-01-08-at-12-35-38-3.jpg"
-          number="9851110057"
-        />
-        <TeamCard
-          name="Er. Arjun Marasini"
-          profession="Director"
-          imageSrc="https://i.ibb.co/HxShFLK/Whats-App-Image-2024-01-08-at-12-35-38-1.jpg"
-          number="9851113132"
-        />
-        <TeamCard
-          name="Gopal Shrestha"
-          profession="Director"
-          imageSrc="https://i.ibb.co/x8WK8XT/Whats-App-Image-2024-01-08-at-12-35-38.jpg"
-          number="9851087988"
-        />
-         <TeamCard
-          name="Rajendra Chhaku"
-          profession="Account Head"
-          imageSrc="https://i.ibb.co/ZXHgsKX/Whats-App-Image-2024-01-08-at-12-35-38-4.jpg"
-          number="9801228414"
-        />
-         <TeamCard
-          name="Suresh Marasini"
-          profession="Accountant"
-          imageSrc="https://i.ibb.co/Z2TwG81/Whats-App-Image-2024-01-08-at-12-35-38-2.jpg"
-          number="9851140412"
-        />
       </div>
     </div>
-
-    
-  </section>
-
-  
-  )
-}
-
-export default Teams
-const TeamCard = ({ imageSrc, name, profession, number }) => {
-  return (
-    <>
-      <div className="w-full px-4 md:w-1/2 xl:w-1/4">
-        <div className="mx-auto mb-10 w-full max-w-[370px]">
-          <div className="relative overflow-hidden rounded-lg">
-            <img src={imageSrc} alt="" className="w-full" />
-            <div className="absolute bottom-5 left-0 w-full text-center">
-              <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                <h3 className="text-base font-semibold text-dark ">
-                  {name}
-                </h3>
-                <p className="text-xs text-body-color dark:text-dark-6">
-                  {profession}
-                </p>
-                <p className="text-xs text-body-color dark:text-dark-6">
-                  {number}
-                </p>
-                <div>
-                  <span className="absolute bottom-0 left-0">
-                    <svg
-                      width={61}
-                      height={30}
-                      viewBox="0 0 61 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx={16}
-                        cy={45}
-                        r={45}
-                        fill="#13C296"
-                        fillOpacity="0.11"
-                      />
-                    </svg>
-                  </span>
-                  <span className="absolute right-0 top-0">
-                    <svg
-                      width={20}
-                      height={25}
-                      viewBox="0 0 20 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="0.706257"
-                        cy="24.3533"
-                        r="0.646687"
-                        transform="rotate(-90 0.706257 24.3533)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="6.39669"
-                        cy="24.3533"
-                        r="0.646687"
-                        transform="rotate(-90 6.39669 24.3533)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="12.0881"
-                        cy="24.3533"
-                        r="0.646687"
-                        transform="rotate(-90 12.0881 24.3533)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="17.7785"
-                        cy="24.3533"
-                        r="0.646687"
-                        transform="rotate(-90 17.7785 24.3533)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="0.706257"
-                        cy="18.6624"
-                        r="0.646687"
-                        transform="rotate(-90 0.706257 18.6624)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="6.39669"
-                        cy="18.6624"
-                        r="0.646687"
-                        transform="rotate(-90 6.39669 18.6624)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="12.0881"
-                        cy="18.6624"
-                        r="0.646687"
-                        transform="rotate(-90 12.0881 18.6624)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="17.7785"
-                        cy="18.6624"
-                        r="0.646687"
-                        transform="rotate(-90 17.7785 18.6624)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="0.706257"
-                        cy="12.9717"
-                        r="0.646687"
-                        transform="rotate(-90 0.706257 12.9717)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="6.39669"
-                        cy="12.9717"
-                        r="0.646687"
-                        transform="rotate(-90 6.39669 12.9717)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="12.0881"
-                        cy="12.9717"
-                        r="0.646687"
-                        transform="rotate(-90 12.0881 12.9717)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="17.7785"
-                        cy="12.9717"
-                        r="0.646687"
-                        transform="rotate(-90 17.7785 12.9717)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="0.706257"
-                        cy="7.28077"
-                        r="0.646687"
-                        transform="rotate(-90 0.706257 7.28077)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="6.39669"
-                        cy="7.28077"
-                        r="0.646687"
-                        transform="rotate(-90 6.39669 7.28077)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="12.0881"
-                        cy="7.28077"
-                        r="0.646687"
-                        transform="rotate(-90 12.0881 7.28077)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="17.7785"
-                        cy="7.28077"
-                        r="0.646687"
-                        transform="rotate(-90 17.7785 7.28077)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="0.706257"
-                        cy="1.58989"
-                        r="0.646687"
-                        transform="rotate(-90 0.706257 1.58989)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="6.39669"
-                        cy="1.58989"
-                        r="0.646687"
-                        transform="rotate(-90 6.39669 1.58989)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="12.0881"
-                        cy="1.58989"
-                        r="0.646687"
-                        transform="rotate(-90 12.0881 1.58989)"
-                        fill="#3056D3"
-                      />
-                      <circle
-                        cx="17.7785"
-                        cy="1.58989"
-                        r="0.646687"
-                        transform="rotate(-90 17.7785 1.58989)"
-                        fill="#3056D3"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
   );
 };
+
+// Usage example
+const TeamSection = () => {
+  const teamMembers = [
+    {
+      id: 1,
+      name: 'Er. Navaraj Vaidya',
+      image: 'https://i.ibb.co/gyTDJNF/ceo.jpg',
+      profession: 'Chairman',
+      phoneNumber: '9851045200',
+    },
+    {
+      id: 2,
+      name: 'John Doe',
+      image: 'https://i.ibb.co/mHvBK78/Whats-App-Image-2024-01-08-at-12-35-38-3.jpg',
+      profession: 'Architect',
+      phoneNumber: '+1 123 456 7890',
+    },
+    {
+      id: 3,
+      name: 'Er. Arjun Marasini',
+      image: 'https://i.ibb.co/HxShFLK/Whats-App-Image-2024-01-08-at-12-35-38-1.jpg',
+      profession: 'Director',
+      phoneNumber: '+1 123 456 7890',
+    },
+    {
+      id: 4,
+      name: 'Rajendra Chaku',
+      image: 'https://i.ibb.co/x8WK8XT/Whats-App-Image-2024-01-08-at-12-35-38.jpg',
+      profession: 'Account Head',
+      phoneNumber: '9851087988',
+    },
+    {
+      id: 5,
+      name: 'Er. Sujan Pradhan',
+      image: 'https://i.ibb.co/ZXHgsKX/Whats-App-Image-2024-01-08-at-12-35-38-4.jpg',
+      profession: 'Managing Director',
+      phoneNumber: '9801228414',
+    },
+    {
+      id: 6,
+      name:'Suresh Marasini',
+      image: 'https://i.ibb.co/Z2TwG81/Whats-App-Image-2024-01-08-at-12-35-38-2.jpg',
+      profession: 'Accountnant',
+      phoneNumber: '9851140412',
+    },
+    // Add more team members as needed
+  ];
+
+  return (
+        
+    <div className="flex flex-wrap gap-x-20 gap-y-10">
+      {teamMembers.map((member) => (
+        <TeamMember
+          key={member.id}
+          name={member.name}
+          image={member.image}
+          profession={member.profession}
+          phoneNumber={member.phoneNumber}
+        />
+      ))}
+    </div>
+    
+  );
+};
+
+export default TeamSection;

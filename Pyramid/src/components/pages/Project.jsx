@@ -1,4 +1,7 @@
 import React from "react"
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import budling1 from '../../assets/2.png'
 import budling2 from '../../assets/3.png'
 import budling3 from '../../assets/4.png'
@@ -8,10 +11,13 @@ import budling6 from '../../assets/9.png'
 import budling7 from '../../assets/11.png'
 
 const Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const cardData = [
     {
       image: budling6,
-      title: "Residential Building of Sailesh Hamal",
+      title: "Residential Building",
       date: "2014",
       location: ["Bhaisepati, Lalitpur"],
     },
@@ -23,25 +29,25 @@ const Project = () => {
     },
     {
       image: budling3,
-      title: "Commercial Complex of Sangita Rana",
+      title: "Commercial Complex",
       date: "2015",
       location: ["Jhamsikhel, Lalitpur,"],
     },
     {
       image: budling5,
-      title: "Commercial Complex of K. B. Bista",
+      title: "Commercial Complex",
       date: "2018",
       location: ["Battisputali, Kathmandu"],
     },
     {
       image: budling4,
-      title: "Commercial Building of Madan Dhakal",
+      title: "Commercial Building",
       date: "2021",
       location: ["Baneshwor, Kathmandu"],
     },
     {
       image: budling3,
-      title: "Residence Building of Rajesh Shahi",
+      title: "Residence Building",
       date: "2015",
       location: ["Sanepa, Lalitpur"],
     },
@@ -53,7 +59,7 @@ const Project = () => {
     },
     {
       image: budling3,
-      title: "Commercial Complex of Sangita Rana",
+      title: "Commercial Complex ",
       date: "2015",
       location: ["Jhamsikhel, Lalitpur"],
     },
@@ -110,22 +116,17 @@ const Project = () => {
                 </p>
               ))}
             </div>
-            <button
-              className={`bg-[#030637] text-white hover:text-[#030637] hover:bg-gray-100 duration-150 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3`}
+            <Link to='/About'
+              className={`bg-[#030637] text-white text-center hover:text-[#030637] hover:bg-gray-100 duration-150 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3`}
             >
               Explore
-            </button>
+            </Link>
+            
           </div>
+          
         ))}
       </div>
-    </div>
-   
-   {/* Table of Complete Projects  */}
-    <div>
-      <table className="min-w-full divide-y divide-red-500" 
-        
-      
-      />
+
     </div>
     </section>
     

@@ -33,7 +33,7 @@
   transition: color 0.4s;
 }
 .expbtn:hover span {
-  color: black;
+  color: rgb(81, 98, 132);
  }
  .expbtn::before,
 .expbtn::after {
@@ -47,7 +47,7 @@
 
 .expbtn::before {
  content: "";
- background: #000;
+ background: #48717e;
  width: 120%;
  left: -10%;
  transform: skew(30deg);
