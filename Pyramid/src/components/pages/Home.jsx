@@ -14,24 +14,35 @@ import Dozar from './../../assets/Dozar.png'
 import { Link } from 'react-router-dom';
 
 
+
 const Home = () => {
+  const handleDirectionsClick = () =>{
+    const destinationLatitude = 27.681732; 
+    const destinationLongitude = 85.327450;
+
+    const directionsLink = `https://www.google.com/maps/dir/?api=1&destination=${destinationLatitude},${destinationLongitude}`;
+    window.open(directionsLink, '_blank');
+  }
   return (
     <>
-    <section className='hcontainer '>
-    <Container className="flex flex-wrap ">
+    <section className='hcontainer z-1 '>
+    <Container className="flex flex-wrap max-sm:mt-24">
         <div className="flex items-center w-full lg:w-1/2 relative bottom-20">
           <div className="max-w-2xl mb-8">
-          <img  src={logo} alt="" className=' w-24 float-left relative top-8'  />
+          <img  src={logo} alt="" className=' w-24 float-left relative top-8 max-sm:relative bottom-8'  />
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">
               Pyramid Construction
             </h1>
            
-            <p className="py-5 text-xl leading-normal text-black lg:text-xl xl:text-2xl">
+            <p className="py-5 text-xl leading-normal text-black lg:text-xl xl:text-2xl max-sm:pt-10">
             Welcome to Pyramid Construction, where craftsmanship meets innovation. As a leading force in the construction industry, we pride ourselves on delivering excellence in every project we undertake.
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link className='px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-3xl' to='/About'> Explore
+            <div className="flex flex-col w-[220px] items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row  bg-indigo-600 rounded-3xl max-sm:h-[50px]">
+              <div>
+              <svg width="56px" height="56px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#400707" stroke-width="1.008"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.9762 5.5914L14.6089 18.6932C14.4726 19.1023 13.8939 19.1023 13.7575 18.6932L11.7868 12.7808C11.6974 12.5129 11.4871 12.3026 11.2192 12.2132L5.30683 10.2425C4.89772 10.1061 4.89772 9.52743 5.30683 9.39106L18.4086 5.0238C18.7594 4.90687 19.0931 5.24061 18.9762 5.5914Z" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </div>
+              <Link onClick={handleDirectionsClick} className='px-8 py-4 text-lg font-bold text-center text-white max-sm:absolute left-10 bottom-6'> Direction
               </Link>
             </div>
           </div>
@@ -52,7 +63,7 @@ const Home = () => {
       </Container>
 
 
-      <section className='float-right relative right-[190px] bottom-[70px]'>
+      <section className='float-right relative right-[190px] bottom-[70px] max-sm:hidden'>
           <Container className="flex flex-row sm:flex-row gap-y-8 py-16 md:py-24">
             <div className="flex flex-row gap-x-16 max-w-[500px] text-left mb-16 md:mb-0 order-first md:order-">
                 <div>
@@ -73,7 +84,7 @@ const Home = () => {
       
 
       {/* Contact  */}
-      <div className="w-full px-4 lg:w-1/2 xl:w-6/12 relative bottom-[200px] left-16">
+      <div className="w-full px-4 lg:w-1/2 xl:w-6/12 relative bottom-[200px] left-16 max-sm:relative max-sm:top-10">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-black sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
@@ -212,7 +223,9 @@ const Home = () => {
     
     </section>
     <div>
-      <Services />
+      <div className='max-sm:relative'>
+      <Services  />
+      </div>
       <Project />
       <About />
     </div>

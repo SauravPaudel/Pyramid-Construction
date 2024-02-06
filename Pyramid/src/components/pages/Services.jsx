@@ -146,7 +146,7 @@ const Services = () => {
         />
         <ServiceCard
           title="Roofing Services"
-          details="Roof installation | Roof repair | Roof maintenance and cleaning"
+          details="Roof installation | Roof repair | Roof maintenance"
           icon={
             <svg
              fill="#000000" width="800px" height="800px" viewBox="0 0 50 50" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" ><path d="M8.149 16.062h6.06l-.053 3.575-6.007 5.406v-8.981zM24.907 14.083l-23.907 21.086 2.52 2.831 21.485-18.954 21.481 18.954 2.514-2.831-23.903-21.086-.097-.083-.093.083z"/>

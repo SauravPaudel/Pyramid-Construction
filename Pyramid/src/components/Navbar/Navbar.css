@@ -52,6 +52,8 @@ nav ul{
   flex-direction: column;
   width: 100%;
   margin-bottom: 0.25rem;
+  background-color: rgb(21, 68, 87);
+  border-radius: 10px;
 }
 
 nav ul.open{

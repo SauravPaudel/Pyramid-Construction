@@ -1,4 +1,4 @@
-import { Routes, Route, ScrollToTop } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
 import Home from './components/pages/Home';
 import Project from './components/pages/Project';
@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 function App(){
 return(
   <>
-   <ScrollToTop>
+   
     <Navbar/>
     <Routes> 
       <Route path="/Home"  element={<Home/>} />
@@ -19,7 +19,7 @@ return(
       <Route path="/About" element ={<About/>}/>
     </Routes>
   <Footer/>
-  </ScrollToTop>
+ 
   </> 
 );
 }

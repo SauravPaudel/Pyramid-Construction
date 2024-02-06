@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Teams from "./section"
+
 
 const TeamMember = ({ image, name, profession, phoneNumber }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-   
+
     <div 
       className="relative overflow-hidden group w-[400px] px-3 flex items-center justify-center py-5"
       onMouseEnter={() => setIsHovered(true)}
@@ -23,7 +23,7 @@ const TeamMember = ({ image, name, profession, phoneNumber }) => {
           isHovered ? 'opacity-100' : 'opacity-0'
         } transition-opacity`}
       >
-        <div className="text-center">
+        <div className="text-center relative top-[120px]">
           <h2 className="text-lg font-semibold">{name}</h2>
           {isHovered && (
             <div>
@@ -34,6 +34,7 @@ const TeamMember = ({ image, name, profession, phoneNumber }) => {
         </div>
       </div>
     </div>
+   
   );
 };
 
@@ -49,10 +50,10 @@ const TeamSection = () => {
     },
     {
       id: 2,
-      name: 'John Doe',
+      name: 'Gopal Shrestha',
       image: 'https://i.ibb.co/mHvBK78/Whats-App-Image-2024-01-08-at-12-35-38-3.jpg',
-      profession: 'Architect',
-      phoneNumber: '+1 123 456 7890',
+      profession: 'Director',
+      phoneNumber: '9851087988',
     },
     {
       id: 3,

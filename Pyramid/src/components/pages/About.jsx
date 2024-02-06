@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from "react";
 import PropTypes from 'prop-types';
-
+import houseimg from './/../../assets/hero.png'
 
 const About = () => {
+  
+
   return (
     <>
 
@@ -22,17 +24,17 @@ const About = () => {
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                <div className="w-full px-3 sm:px-4 xl:w-1/2 max-sm:pl-5">
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/YbDWssK/josue-isai-ramos-figueroa-qv-BYn-Mu-NJ9-A-unsplash.jpg"
+                      src="https://i.ibb.co/LrRb53b/bg2.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/sWWMqJx/john-kakuk-t8l4-MZu-Xon-Y-unsplash.jpg"
+                      src="https://i.ibb.co/nBHCYQn/bg1.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -43,7 +45,7 @@ const About = () => {
                     <img
                       src="https://i.ibb.co/qjhz4RY/mufid-majnun-6203-Ynp5-Zq-E-unsplash.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="w-full rounded-2xl max-sm:pr-4"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
@@ -620,7 +622,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 max-sm:pl-5" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-4 text-lg font-semibold text-primary">
                   Why Choose Us
@@ -662,7 +664,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
+        <div  className="-mx-4 flex flex-wrap" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false" >
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
               header="Our Values"
