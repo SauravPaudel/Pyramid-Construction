@@ -4,7 +4,8 @@
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   /* background-image: url(https://i.ibb.co/LrRb53b/bg2.jpg);
-  backdrop-filter:  blur(2px) saturate(100%); */
+  backdrop-filter:  blur(2px) saturate(100%);
+  position: sticky; */
   
 }
 .hcontainer{

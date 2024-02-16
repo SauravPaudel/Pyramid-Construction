@@ -88,7 +88,7 @@ const TeamSection = () => {
 
   return (
         
-    <div className="flex flex-wrap gap-x-20 gap-y-10">
+    <div className="flex flex-wrap gap-x-20 gap-y-10 relative left-[150px]">
       {teamMembers.map((member) => (
         <TeamMember
           key={member.id}

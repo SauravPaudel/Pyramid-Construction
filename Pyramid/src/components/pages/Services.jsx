@@ -184,7 +184,6 @@ const Services = () => {
 const ServiceCard = ({ icon, title, details }) => {
   return (
     <>
-    
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mb-9 rounded-[20px] bg-green-100 p-10 shadow-md hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
           <div className="mb-8 flex h-[80px] w-[80px] items-center justify-center rounded-2xl bg-[#ffff]">
@@ -196,6 +195,7 @@ const ServiceCard = ({ icon, title, details }) => {
           <p className="text-body-color dark:text-dark-6">{details}</p>
         </div>
       </div>
+      
      
     </>
   );

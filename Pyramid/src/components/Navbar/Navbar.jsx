@@ -10,9 +10,8 @@ export const Navbar=()=>{
       }, []);
     const [menuOpen, setMenuOpen] = useState(false)
     return (    
-        <nav className='flex justify-between items-center bg-[#53c89d] px-10 h-16  text-white sticky top-0 z-20'>
-            <Link to='/Home' className='title size-10 m-4 font-bold'><
-                img src={logo} alt="Logo" /> </Link>
+        <nav className='flex justify-between items-center bg-indigo-600  px-10 h-16  text-white sticky top-0 z-20'>
+            <Link to='/Home' className='title size-10 m-4 font-bold'> </Link>
             <div className='menu' onClick={()=> {setMenuOpen(!menuOpen)}}>
                 <span></span>
                 <span></span>

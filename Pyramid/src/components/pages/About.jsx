@@ -43,7 +43,7 @@ const About = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
-                      src="https://i.ibb.co/qjhz4RY/mufid-majnun-6203-Ynp5-Zq-E-unsplash.jpg"
+                      src="https://i.ibb.co/PNGLGZJ/hero.png"
                       alt=""
                       className="w-full rounded-2xl max-sm:pr-4"
                     />
