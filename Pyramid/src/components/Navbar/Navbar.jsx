@@ -18,6 +18,7 @@ export const Navbar=()=>{
                 <span></span>
             </div>
             <ul className= {menuOpen ? "open" : ""}>
+                
                 <li className='list-none'>
                     
                     <NavLink to="/Home">Home</NavLink>

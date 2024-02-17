@@ -622,7 +622,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 max-sm:pl-5" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 max-sm:ml-8" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-4 text-lg font-semibold text-primary">
                   Why Choose Us
@@ -649,7 +649,7 @@ const About = () => {
 
         <div className="container mx-auto pt-28">
         <div className="-mx-4 flex flex-wrap" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
-          <div className="w-full px-4">
+          <div className="w-full px-4 max-sm:ml-3">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
               <span className="mb-2 block text-lg font-semibold text-blue-400">
                 Values | Vision | Mission | Objective | Goals 
