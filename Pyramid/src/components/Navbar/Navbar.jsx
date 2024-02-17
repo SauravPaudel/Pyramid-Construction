@@ -9,6 +9,10 @@ export const Navbar=()=>{
         window.scrollTo(0, 0);
       }, []);
     const [menuOpen, setMenuOpen] = useState(false)
+    const handleLinkClick = () => {
+        // Close the menu when a NavLink is clicked
+        setMenuOpen(false);
+      };
     return (    
         <nav className='flex justify-between items-center bg-indigo-600  px-10 h-16  text-white sticky top-0 z-20'>
             <Link to='/Home' className='title size-10 m-4 font-bold'> </Link>
@@ -18,22 +22,21 @@ export const Navbar=()=>{
                 <span></span>
             </div>
             <ul className= {menuOpen ? "open" : ""}>
-                
                 <li className='list-none'>
                     
-                    <NavLink to="/Home">Home</NavLink>
+                    <NavLink to="/Home" onClick={handleLinkClick}>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Project">Project</NavLink>
+                    <NavLink to="/Project"  onClick={handleLinkClick}>Projects</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Services">Service</NavLink>
+                    <NavLink to="/Services" onClick={handleLinkClick}>Service</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Teams">Teams</NavLink>
+                    <NavLink to="/Teams"onClick={handleLinkClick}>Teams</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/About">About</NavLink>
+                    <NavLink to="/About"onClick={handleLinkClick}>About</NavLink>
                 </li>
             </ul>
         </nav>
