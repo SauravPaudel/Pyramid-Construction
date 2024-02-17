@@ -85,7 +85,7 @@ const Home = () => {
 
       {/* Contact  */}
       <div className="w-full px-4 lg:w-1/2 xl:w-6/12 relative bottom-[300px] left-16 max-sm:relative max-sm:top-10">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
+              <div className="mb-12 max-w-[570px] lg:mb-0 max-sm:hidden">
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-black sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
