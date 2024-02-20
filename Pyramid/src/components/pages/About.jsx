@@ -622,7 +622,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 max-sm:ml-8" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
+            <div className="w-full pr-8 lg:w-1/2 xl:w-5/12 max-sm:ml-8" data-aos="fade-left" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease" data-aos-once="false">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-4 text-lg font-semibold text-primary">
                   Why Choose Us
@@ -630,7 +630,7 @@ const About = () => {
                 <h2 className="mb-5 text-3xl font-bold text-dark dark:text-black sm:text-[40px]/[48px]">
                   Make your customers happy by giving services.
                 </h2>
-                <p className="mb-5 text-base text-body-color dark:text-dark-6">
+                <p className="mb-5 text-base  text-body-color dark:text-dark-6">
                 At Pyramid Construction, we blend decades of experience with a forward-thinking approach to create spaces that inspire and endure. 
                 </p>
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">

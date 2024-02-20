@@ -21,7 +21,6 @@ const Footer = () => {
 
       <li>
         <Link className='text-gray-700 transition hover:text-gray-700/75' to='/Project'> Project </Link>
-        {/* <a className="text-gray-700 transition hover:text-gray-700/75" href="/Project"> Projects </a> */}
       </li>
       
       <li>
@@ -44,7 +43,7 @@ const Footer = () => {
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
       <li>
         <a
-          href="/"
+          href="https://www.facebook.com/PESujan"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75"
