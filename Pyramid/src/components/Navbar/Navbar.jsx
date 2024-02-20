@@ -15,7 +15,7 @@ export const Navbar=()=>{
       };
     return (    
         <nav className='flex justify-between items-center bg-indigo-600  px-10 h-16  text-white sticky top-0 z-20'>
-            <Link to='/Home' className='title size-10 m-4 font-bold'> </Link>
+            <Link to='/Home' className='title size-10 m-4 font-bold'> <img src={logo} alt="" srcset="" /> </Link>
             <div className='menu' onClick={()=> {setMenuOpen(!menuOpen)}}>
                 <span></span>
                 <span></span>

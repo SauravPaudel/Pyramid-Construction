@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   const facebookLink = () => {
-    const directionsLink = `https://www.youtube.com/watch?v=2thKuspxZRo&t=21s&ab_channel=AliakbarZohour`;
+    const directionsLink = `https://www.facebook.com/PESujan`;
     window.open(directionsLink, "_blank");
   };
 
@@ -34,7 +34,7 @@ const Home = () => {
           className="relative h-screen bg-cover bg-center"
           style={{
             backgroundImage:
-              'url("https://img.freepik.com/free-photo/construction-workers-sunset_53876-138180.jpg?w=2000&t=st=1708413176~exp=1708413776~hmac=4be2a4f4334d5552b87f2a0d4cd3b404618874892d438698e81490457fe62380")',
+              'url("https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/277674904_501928811444603_6841552494269669375_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_ohc=KlnORUSJc88AX-u2Mvq&_nc_ht=scontent.fktm1-1.fna&oh=00_AfDq01Mn-o6VGOvav1UkDNi-3ZjwJKwEaWhHAc9ej-Xy3A&oe=65D933C7")',
           }}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
