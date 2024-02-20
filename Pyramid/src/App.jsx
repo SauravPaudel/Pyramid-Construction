@@ -20,7 +20,6 @@ return(
       <Route path="/Teams" element ={<Teams/>}/>
       <Route path="/About" element ={<About/>}/>
       <Route path='*' element={<Navigate to='/' />} />
-      
     </Routes>
   <Footer/>
 
