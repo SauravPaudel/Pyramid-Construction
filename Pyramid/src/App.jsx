@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
 function App(){
 return(
   <>
- 
+ <div className='w-full h-100vh overflow-hidden '>
     <Navbar/>
     <Routes> 
       <Route path="/"  element={<Home/>} />
@@ -22,7 +22,7 @@ return(
       <Route path='*' element={<Navigate to='/' />} />
     </Routes>
   <Footer/>
-
+  </div>
   </> 
 );
 }

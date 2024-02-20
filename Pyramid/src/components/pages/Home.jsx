@@ -28,8 +28,8 @@ const Home = () => {
   };
 
   return (
-    <>
-      <section className="hcontainer z-1 ">
+    < >
+      <section className="hcontainer z-1 overflow-hidden ">
         <div
           className="relative h-screen bg-cover bg-center"
           style={{
@@ -51,8 +51,8 @@ const Home = () => {
                 <p>Contact: +977 015543657 | sujan.pes@gmail.com</p>
               </div>
 
-              <div className="flex flex-row gap-5 relative right-20 md:left-[185px]">
-                <div className=" bg-indigo-600 rounded-3xl w-[200px] h-16 flex items-center flex-row-reverse relative left-32 top-10     ">
+              <div className="flex flex-row gap-5 relative right-[115px] md:left-[185px]">
+                <div className=" bg-indigo-600 rounded-3xl w-[180px] h-16 flex items-center flex-row-reverse relative left-32 top-10     ">
                   <Link
                     onClick={handleDirectionsClick}
                     className="px-8 py-4 text-lg font-bold text-center text-white "
